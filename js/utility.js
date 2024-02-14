@@ -8,9 +8,19 @@ function showElementById(elementId) {
     element.classList.remove('hidden')
 }
 
-function setBackgroundColorById(elementId){
-    const element =document.getElementById(elementId)
+function setBackgroundColorById(elementId) {
+    const element = document.getElementById(elementId)
     element.classList.add('bg-orange-400')
+}
+
+function removeBackgroundColorById(elementId) {
+    const element = document.getElementById(elementId)
+    element.classList.remove('bg-orange-400')
+}
+
+function setTextElementValueById(elementId, value) {
+    const element = document.getElementById(elementId);
+    element.innerText = value
 }
 
 function getARandomAlphabet() {
@@ -26,3 +36,4 @@ function getARandomAlphabet() {
     // console.log(index, alphabet);
     return alphabet;
 }
+
